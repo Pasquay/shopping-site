@@ -33,6 +33,7 @@ header .right-nav-buttons {
     margin: 0 1rem;
     position: relative;
     display: inline-block;
+    transition: all 0.2s ease;
 }
 
 .dropdown-button-container {
@@ -47,6 +48,78 @@ header .right-nav-buttons {
 
 .dropdown-content {
     display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+
+#home-dropdown-content {
+    min-width: 10rem;
+}
+
+#store-dropdown-content {
+    min-width: 6.5rem;
+}
+
+#search-dropdown-content {
+    min-width: 20rem;
+    right: -4rem;
+    left: auto;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    font-family: sora;
+    font-size: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+#cart-dropdown-content {
+    min-height: 10rem;
+    width: 20rem;
+    right: 0;
+    left: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3rem;
+}
+
+.dropdown-content a {
+    font-family: sora;
+    color: #232323;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #538cb1;
+    color: white;
+}
+
+.dropdown-content p {
+    font-family: sora;
+    font-size: 1rem;
+    color: #232323;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .right-nav-buttons img {
@@ -56,6 +129,10 @@ header .right-nav-buttons {
     cursor: pointer;
 }
 
+#cart-icon {
+    margin-left: 0;
+}
+
 header button {
     background-color: rgba(255,255,255, 0);
     border: 0px;
@@ -63,6 +140,14 @@ header button {
     color: white;
     font-family: sora;
     font-size: 1rem;
+}
+
+#logo {
+    font-family: playfair display;
+    font-size: 1.3rem;
+    margin: 0;
+    text-decoration: none;
+    color: white;
 }
 
 header p {

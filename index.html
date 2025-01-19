@@ -11,32 +11,48 @@
                 <div class="dropdown">
                     <div class="dropdown-button-container">
                         <button class="dropdown-button">Home</button>
-                        <img src="/sources/down-arrow-icon.png">
+                        <img src="sources/down-arrow-icon.png">
                     </div>
-                    <div class="dropdown-content">
-                        <a href="#">content 1</a>
-                        <a href="#">content 2</a>
-                        <a href="#">content 3</a>
+                    <div class="dropdown-content" id="home-dropdown-content">
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Explore</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <div class="dropdown-button-container">
                         <button class="dropdown-button">Store</button>
-                        <img src="/sources/down-arrow-icon.png">
+                        <img src="sources/down-arrow-icon.png">
                     </div>
-                    <div class="dropdown-content">
-                        <a href="#">content 1</a>
-                        <a href="#">content 2</a>
-                        <a href="#">content 3</a>
+                    <div class="dropdown-content" id="store-dropdown-content">
+                        <a href="#">Sale</a>
+                        <a href="#">Women</a>
+                        <a href="#">Men</a>
+                        <a href="#">Kids</a>
                     </div>
                 </div>
                 <button>Contact Us</button>
             </div>
-            <p class="logo">Shoes Co.</p>
-                <div class="right-nav-buttons">
-                <img src="/sources/user-icon.png" alt="user">
-                <img src="/sources/search-icon.png" alt="search">
-                <img src="/sources/cart-icon.png" alt="cart">
+
+            <a href="/" id="logo">Shoes Co.</a>
+
+            <div class="right-nav-buttons">
+                <a href=""><img src="sources/user-icon.png" alt="user"></a>
+                <div class="dropdown">
+                    <div class="dropdown-button-container">
+                        <a href=""><img src="sources/search-icon.png" alt="search"></a>
+                    </div>
+                    <div class="dropdown-content" id="search-dropdown-content">
+                        <input type="text" placeholder="Search..." id="search-bar">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-button-container">
+                        <img src="sources/cart-icon.png" alt="cart" id="cart-icon">
+                    </div>
+                    <div class="dropdown-content" id="cart-dropdown-content">
+                        <p>Your cart is empty...</p>
+                    </div>
+                </div>
             </div>
         </header>
 
