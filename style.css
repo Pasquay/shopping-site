@@ -227,7 +227,7 @@ ul li {
     margin: 0 1rem;         
 }
 
-a {
+.product-buttons-container a {
     text-decoration: none;
     color: #555;
     font-family: sans-serif;
