@@ -227,7 +227,7 @@ ul li {
     margin: 0 1rem;         
 }
 
-a {
+.product-buttons-container a {
     text-decoration: none;
     color: #555;
     font-family: sans-serif;
@@ -241,4 +241,45 @@ a {
     background-color: #555; /* Background color when active */
     border-radius: 5px;     /* Optional: Styling for buttons */
     padding: 5px 10px;      /* Optional: Adds some padding */
+}
+
+/*carousel_code */ 
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-items-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
 }
