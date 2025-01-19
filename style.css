@@ -319,12 +319,16 @@ ul li {
 .slider .list .item.active p:nth-child(3){
     animation-duration: 1.3s;
 }
-.arrows{
+.arrows {
     position: absolute;
-    top: 30%;
-    right: 50px;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Space between buttons */
     z-index: 100;
 }
+
 .arrows button{
     background-color: #eee5;
     border: none;
@@ -370,7 +374,7 @@ ul li {
     border-radius: 10px;
 }
 .thumbnail .item.active{
-    filter: brightness(1.5);
+    filter: brightness(1.2);
 }
 .thumbnail .item .content{
     position: absolute;
