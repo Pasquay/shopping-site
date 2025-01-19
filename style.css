@@ -43,6 +43,7 @@ header .right-nav-buttons {
     width: 1.5rem;
     height: 1.5rem;
     margin: 0 0.8rem;
+    cursor: pointer;
 }
 
 header button {
