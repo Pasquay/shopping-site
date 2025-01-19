@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
 
 body {
-    background-color: #386586;
+    background-color: #000000;
     margin: 0;
 }
 
@@ -245,41 +245,30 @@ ul li {
 
 /*carousel_code */ 
 
-.carousel {
+.carousel{
+    height: 100vh;
+    margin-top: 0px;
     position: relative;
-    width: 80%;
-    margin: 0 auto;
+}
+
+.carousel .list .carousel_item{
+    position: absolute;
+    inset: 0 0 0 0;
     overflow: hidden;
 }
 
-.carousel-items-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+.carousel .list .carousel_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-button {
+.carousel .list .carousel_item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 2em;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
+    left: 0;
+    bottom: 0;
+    background-image: linear - gradient (to top black  40%, transparent);
 }
