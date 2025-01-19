@@ -35,6 +35,16 @@ header .right-nav-buttons {
     display: inline-block;
 }
 
+.dropdown-button-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-button-container img {
+    margin-left: -0.1rem;
+}
+
 .dropdown-content {
     display: none;
 }
