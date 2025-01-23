@@ -10,7 +10,7 @@ document.querySelectorAll('.category-button').forEach(button => {
 
 //carousel
 let currentIndex = 0;
-
+ 
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
